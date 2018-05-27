@@ -20,9 +20,9 @@ app.use((request, response, next) => {
   next();
 });
 
-app.use((request, response, next) => {
-  response.render('maintenence.hbs')
-});
+// app.use((request, response, next) => {
+//   response.render('maintenence.hbs')
+// });
 
 hbs.registerHelper('getCurrentYear', () => {
   return new Date().getFullYear();
