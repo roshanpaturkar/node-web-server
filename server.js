@@ -67,6 +67,13 @@ app.get('/about', (request, response) => {
   });
 });
 
+app.get('/project', (request, response) => {
+  response.render('project.hbs', {
+    pageTitle: 'Project Page!',
+    message: 'Potpolio page is here!'
+  });
+});
+
 app.get('/bad', (request, response) => {
   response.send({
     errorMessage: 'Unable to handle request!'
